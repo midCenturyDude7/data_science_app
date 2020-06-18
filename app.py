@@ -1,4 +1,13 @@
-# Import
+# Hat tip/acknowledgement to Chanin Nantasenamat - The Data Professor - and his
+# Medium Blog Post titled, "How to Build a Data Science Web App in Python"
+# URL: https://towardsdatascience.com/how-to-build-a-data-science-web-app-in-python-61d1bed65020
+
+"""
+File: app.py
+A simple data-driven web app using the streamlit Python library in just a few lines of code.
+"""
+
+# Import libraries
 import yfinance as yf
 import streamlit as st
 
@@ -7,8 +16,6 @@ st.write("""
 Shown are the stock closing price and volume of Google
 """)
 
-# https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
-#define the ticker symbol
 tickerSymbol = 'GOOGL'
 
 # get data on this ticker
@@ -27,4 +34,4 @@ st.line_chart(tickerDf.Close)
 st.write("""
 ## Volume
 """)
-st.line_chart(tickerDf.Volume)"# data_science_app" 
+st.line_chart(tickerDf.Volume)
